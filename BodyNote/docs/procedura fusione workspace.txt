@@ -1,0 +1,11 @@
+Se vengono creati due ws e nel primo vi sono schede paziente non incluse nel secondo, si può sfruttare la funzione di auto completamento del database inclusa nella classe
+CBodyNoteApp::LoadPatientIndex
+
+Procedura
+------------
+Dati due Workspaces WS1 e WS2 da fondere.
+1) eseguire il backup del ws 2
+2) eliminare dal ws 2 i file dbIndex
+3) copiare dal ws 1 al ws 2 le cartelle corrispondenti ai pazienti da importare, rinominandole con numero successivo all'ultima cartella presente nel ws 2
+4) avviare il software e caricare il database 
+5) viene ricreato il dbindex, comprensivo delle schede pazienti integrate

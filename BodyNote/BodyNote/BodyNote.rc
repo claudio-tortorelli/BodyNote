@@ -1,0 +1,563 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_RULERRICHEDITCTRLDEMO_DIALOG DIALOGEX 0, 0, 356, 174
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Diario Clinico"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Salve e esci",IDOK,286,150,70,14
+    LTEXT           "Placeholder for RTF-control",IDC_STATIC_PLACEMENT,0,0,355,145,NOT WS_VISIBLE | WS_BORDER
+    PUSHBUTTON      "Save...",IDC_BUTTON_SAVERTF,189,150,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Load...",IDC_BUTTON_LOADRTF,240,150,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "New",IDC_BUTTON_NEWRTF,4,150,50,14,NOT WS_VISIBLE
+    CONTROL         "Toolbar",IDC_CHECK_SHOW_TOOLBAR,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,59,150,40,10
+    CONTROL         "Ruler",IDC_CHECK_SHOW_RULER,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,99,150,35,10
+    CONTROL         "Read only",IDC_CHECK_READONLY,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,134,150,48,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_RULERRICHEDITCTRLDEMO_DIALOG, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Italian (Italy) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 96
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Informazioni su BodyNote"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "Copyright - 2011-2017",IDC_STATIC,42,26,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2011",IDC_STATIC_VER,42,12,114,8
+    DEFPUSHBUTTON   "OK",IDOK,60,70,50,14,WS_GROUP
+    GROUPBOX        "",IDC_STATIC,7,62,156,27
+    GROUPBOX        "",IDC_STATIC,7,3,156,60
+    LTEXT           "Gambini - Tortorelli",IDC_STATIC,42,39,88,8
+    LTEXT           "Licensed to Fiseoterapia XXXX",IDC_STATIC,42,51,109,8
+END
+
+IDD_BODYNOTE_DIALOG DIALOGEX 0, 0, 547, 352
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "BodyNote"
+MENU IDR_MENU_IO
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,407,69,124,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_SURNAME,407,86,124,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_PHONE,407,103,124,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_EMAIL,407,120,124,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_BIRTHDATE,407,137,67,12,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_PICTURES,408,188,90,158,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_COMMENT,408,209,124,37,ES_MULTILINE | ES_READONLY
+    PUSHBUTTON      "Nuovo",IDC_BUTTON_NEW,365,18,52,16
+    PUSHBUTTON      "Carica",IDC_BUTTON_LOAD,423,18,52,16
+    EDITTEXT        IDC_EDIT_AGE,501,137,29,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    PUSHBUTTON      "Avvia",IDC_BUTTON_STARTWEBCAM,367,268,53,22,WS_DISABLED
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOPWEBCAM,423,268,53,22
+    PUSHBUTTON      "Scatto",IDC_BUTTON_SHOT,479,268,53,22
+    PUSHBUTTON      "Info",IDC_BUTTON_ABOUT,423,317,53,22
+    PUSHBUTTON      "Esci",IDOK,479,317,53,22
+    LTEXT           "",IDC_STATIC_CAM1,7,18,112,85,WS_BORDER
+    LTEXT           "",IDC_STATIC_CAM2,124,18,112,85,WS_BORDER
+    LTEXT           "",IDC_STATIC_CAM3,241,18,112,85,WS_BORDER
+    LTEXT           "",IDC_STATIC_CURCAMPIC,7,117,345,228,SS_NOTIFY | WS_BORDER
+    CONTROL         "Abilita Cam1",IDC_CHECK_CAM1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,55,10
+    CONTROL         "Abilita Cam2",IDC_CHECK_CAM2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,124,7,55,10
+    CONTROL         "Abilita Cam3",IDC_CHECK_CAM3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,241,7,55,10
+    LTEXT           "Camera Corrente",IDC_STATIC_CURCAMTITLE,7,106,272,8
+    GROUPBOX        "Webcam",IDC_STATIC,358,256,182,41
+    GROUPBOX        "",IDC_STATIC,358,307,182,37
+    GROUPBOX        "Gestione Paziente",IDC_STATIC,358,7,182,40
+    GROUPBOX        "Dati Paziente",IDC_STATIC,358,51,182,203
+    LTEXT           "Nome:",IDC_STATIC,381,71,22,8
+    LTEXT           "Cognome:",IDC_STATIC,369,88,34,8
+    LTEXT           "Nascita:",IDC_STATIC,376,139,27,8
+    LTEXT           "Immagini:",IDC_STATIC,369,190,32,8
+    LTEXT           "Telefono:",IDC_STATIC,371,104,32,8
+    LTEXT           "Emaill:",IDC_STATIC,382,122,21,8
+    PUSHBUTTON      "Apri cartella",IDC_BUTTON_OPENPATIENTFOLDER,484,50,48,12,NOT WS_VISIBLE
+    LTEXT           "Age:",IDC_STATIC,483,139,16,8,NOT WS_VISIBLE
+    CONTROL         "Modifica",IDC_CHECK_EDITDATA,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,415,51,42,10
+    PUSHBUTTON      "Elimina",IDC_BUTTON_DELETEPICTURE,500,188,31,13,WS_DISABLED
+    PUSHBUTTON      "Elimina",IDC_BUTTON_DELPATIENT,482,18,50,16,WS_DISABLED
+    PUSHBUTTON      "Setup",IDC_BUTTON_SETTINGS,367,317,53,22
+    LTEXT           "Commenti:",IDC_STATIC,366,209,35,8
+    PUSHBUTTON      "Dettaglio informazioni",IDC_BUTTON_MOREDETAILS,364,158,68,23,WS_DISABLED
+    PUSHBUTTON      "Nuovo",IDC_BUTTON_CARICADOC,432,158,48,23,WS_DISABLED
+    PUSHBUTTON      "Vedi",IDC_BUTTON_VEDIDOC,482,158,48,23,WS_DISABLED
+    CONTROL         "",IDC_PROGRESS_LOADARCHIVE,"msctls_progress32",PBS_SMOOTH | WS_BORDER,366,36,165,7
+END
+
+IDD_DIALOG_LOADRECORD DIALOGEX 0, 0, 225, 222
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selezionare un paziente"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,105,197,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,197,50,14
+    CONTROL         "",IDC_LIST_PATIENTS,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | LVS_ALIGNLEFT | WS_BORDER | WS_GROUP | WS_TABSTOP,7,7,211,171
+    GROUPBOX        "",IDC_STATIC,7,189,211,27
+    LTEXT           "Static",IDC_STATIC_RECORDFOUND,7,181,211,8
+    EDITTEXT        IDC_EDIT_SEARCH,10,197,91,13,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SETTINGS DIALOGEX 0, 0, 317, 148
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setup"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,105,122,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,122,50,14
+    LTEXT           "Cartella WorkSpace:",IDC_STATIC,15,16,65,10
+    GROUPBOX        "",IDC_STATIC,7,4,303,30
+    EDITTEXT        IDC_EDIT_WROKSPACEFOLDER,82,14,199,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_PICKFOLDER,284,13,16,14
+    GROUPBOX        "",IDC_STATIC,7,113,303,28
+    LTEXT           "Password di accesso:",IDC_STATIC,34,50,69,8
+    EDITTEXT        IDC_EDIT_PW1,104,48,120,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PW2,104,63,120,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "max 64 caratteri",IDC_STATIC,227,50,54,8
+    CONTROL         "Riproduci suono allo scatto",IDC_CHECK_SHOTSOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,99,101,10
+    GROUPBOX        "Immagini",IDC_STATIC,7,92,303,20
+    GROUPBOX        "Sicurezza",IDC_STATIC,7,36,303,54
+    CONTROL         "Backup automatico settimanale",IDC_CHECK_BACKWEEK,
+                    "Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,34,76,115,10
+    CONTROL         "Backup mensile",IDC_CHECK_BACKMONTH,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,246,74,64,10
+END
+
+IDD_DIALOG_ACCESSPSW DIALOGEX 0, 0, 228, 38
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "BodyNote - Password di accesso"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PSW,14,13,150,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,167,12,50,14
+    GROUPBOX        "",IDC_STATIC,7,3,214,27
+END
+
+IDD_DIALOG_MOREDATA DIALOGEX 0, 0, 680, 414
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Informazioni Paziente"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_MOTIVOCONSULTO,10,31,149,50,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_INSORGENZASINTOMI,10,96,149,50,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_CARATTERISTICHESINTOMO,10,163,149,50,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_CAUSASCATENANTE,10,229,149,50,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_TERAPIEPRECEDENTI,10,295,149,50,ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_UROGENITALE,176,31,149,43,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_CARDIOINTESTINALE,176,85,149,43,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_CARDIORESPIRATORIO,176,139,149,43,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_RESPIRATORIO,176,193,149,43,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_PELLE,176,247,149,43,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_ALTRO,176,301,149,43,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_ESAMIDIAGNOSTICI,415,15,85,23,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_USOFARMACI,415,41,85,23,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_ALIMENTAZIONE,415,67,85,23,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_VARIAZIONEPESO,415,93,85,23,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_SONNOSVEGLIA,415,119,85,23,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_CEFALEE,415,145,85,23,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_TRAUMATISMI,415,171,85,23,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_INTERVENTI,415,197,85,23,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_GRAVIDANZE,415,223,85,23,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_MALATTIEIMPORTANTI,415,249,85,23,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_VALUTAZIONEFAMILIARE,415,275,85,23,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_PROFESSIONE,415,301,85,23,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_HOBBY,415,327,85,23,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_VISTA,515,31,149,41,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_STOMATOGNATICO,516,86,149,41,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_CICATRICI,516,141,149,41,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_MICROGALVANISMI,515,196,149,41,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_BILANCIOPOSTURALE,515,251,149,41,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_CHINESIOLOGICI,516,306,149,41,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_DIAGNOSI,97,366,437,34,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "OK",ID_BUTTON_OK,554,373,50,18
+    PUSHBUTTON      "Diario Clinico",IDC_BUTTON_DIARIO,18,370,60,26
+    PUSHBUTTON      "Cancel",IDCANCEL,614,373,50,18
+    LTEXT           "Motivo del consulto",IDC_STATIC,10,21,62,8
+    LTEXT           "Tempo di insorgenza del sintomo",IDC_STATIC,10,86,138,10
+    LTEXT           "Causa scatenante",IDC_STATIC,12,219,59,8
+    LTEXT           "Terapie precedenti",IDC_STATIC,10,285,61,8
+    LTEXT           "Cardiovascolare",IDC_STATIC,176,130,81,8
+    LTEXT           "Gastrointestinale",IDC_STATIC,176,75,81,8
+    LTEXT           "Respiratorio",IDC_STATIC,176,184,81,8
+    LTEXT           "Genitourinario",IDC_STATIC,176,21,81,8
+    GROUPBOX        "Funzionalità apparati",IDC_STATIC,166,7,168,347
+    GROUPBOX        "Interrogatorio",IDC_STATIC,335,7,168,347
+    RTEXT           "Esami diagnostici specialistici:",IDC_STATIC,343,17,67,17
+    RTEXT           "Uso di farmaci:",IDC_STATIC,343,44,67,17
+    RTEXT           "Abitudini alimentari:",IDC_STATIC,343,70,67,17
+    RTEXT           "Variazione di peso:",IDC_STATIC,343,96,67,17
+    RTEXT           "Ritmo sonno/sveglia:",IDC_STATIC,343,122,67,17
+    RTEXT           "Cefalee:",IDC_STATIC,343,149,67,17
+    RTEXT           "Traumatismi:",IDC_STATIC,343,174,67,17
+    RTEXT           "Interventi chirurgici:",IDC_STATIC,343,200,67,17
+    RTEXT           "Gravidanze:",IDC_STATIC,343,226,67,17
+    RTEXT           "Malattie importanti:",IDC_STATIC,343,252,67,17
+    RTEXT           "Valutazione familiare:",IDC_STATIC,343,278,67,17
+    RTEXT           "Professione:",IDC_STATIC,343,304,67,17
+    RTEXT           "Sport/Hobby:",IDC_STATIC,343,330,67,17
+    GROUPBOX        "Valutazione posturale",IDC_STATIC,505,7,168,347
+    LTEXT           "Vista/visione",IDC_STATIC,515,21,120,8
+    LTEXT           "Apparato stomatognatico",IDC_STATIC,516,76,120,8
+    LTEXT           "Cicatrici patologiche",IDC_STATIC,516,130,120,8
+    LTEXT           "Microgalvanismi",IDC_STATIC,515,186,120,8
+    LTEXT           "Bilancio posturale",IDC_STATIC,515,241,120,8
+    LTEXT           "Test chinesiologici",IDC_STATIC,516,296,120,8
+    GROUPBOX        "Trattamenti",IDC_STATIC,7,356,79,50
+    GROUPBOX        "Diagnosi",IDC_STATIC,91,356,449,50
+    LTEXT           "Caratteristiche del sintomo",IDC_STATIC,12,153,86,8
+    LTEXT           "Pelle",IDC_STATIC,176,238,76,8
+    GROUPBOX        "Accoglienza",IDC_STATIC,6,7,158,347
+    GROUPBOX        "",IDC_STATIC,545,356,128,50
+    LTEXT           "Altro",IDC_STATIC,176,292,76,8
+END
+
+IDD_DIALOG_ADDDOCUMENT DIALOGEX 0, 0, 316, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Aggiungi Documento"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,43,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,259,43,50,14
+    LTEXT           "File da importare:",IDC_STATIC,7,9,57,8
+    EDITTEXT        IDC_EDIT_SELECTEDPATH,64,8,221,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BUTTON_ADD,287,7,22,14
+    LTEXT           "Nuovo nome:",IDC_STATIC,20,27,44,8
+    EDITTEXT        IDC_EDIT_NEWNAME,64,25,221,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_APPCANPARSE | WS_TABSTOP,64,42,71,12
+    LTEXT           "Data documento:",IDC_STATIC,7,44,56,8
+END
+
+IDD_DIALOG_LOADDOC DIALOGEX 0, 0, 225, 222
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selezionare un documento in archivio"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,159,197,50,14
+    CONTROL         "",IDC_LIST_PATIENTS,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | LVS_ALIGNLEFT | WS_BORDER | WS_GROUP | WS_TABSTOP,7,7,211,176
+    GROUPBOX        "",IDC_STATIC,7,189,211,27
+    LTEXT           "Static",IDC_STATIC_RECORDFOUND,7,183,211,8
+    PUSHBUTTON      "Apri",IDC_BUTTON_OPEN,88,197,50,14
+    PUSHBUTTON      "Elimina",IDC_BUTTON_DELETE,17,197,50,14
+END
+
+IDD_DIALOG_BACKUPPROGRESS DIALOGEX 0, 0, 309, 24
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Backup automatico"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESS_BACK,"msctls_progress32",WS_BORDER,7,7,295,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_BODYNOTE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 540
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 345
+    END
+
+    IDD_DIALOG_LOADRECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_DIALOG_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_DIALOG_ACCESSPSW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 31
+    END
+
+    IDD_DIALOG_MOREDATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 673
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 407
+    END
+
+    IDD_DIALOG_ADDDOCUMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_DIALOG_LOADDOC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_DIALOG_BACKUPPROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 17
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)\r\n"
+    "LANGUAGE 16, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\BodyNote.rc2""  // risorse non Microsoft Visual C++ modificate\r\n"
+    "#include ""l.ITA\\afxres.rc""      // Componenti standard\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\BodyNote.ico"
+IDI_ICON_ADDNOTE        ICON                    "res\\addSession.ico"
+IDI_ICON_ADDNOTEG       ICON                    "res\\addSessionG.ico"
+IDI_ICON_UNDO           ICON                    "res\\arrow_undo.ico"
+IDI_ICON_UNDOG          ICON                    "res\\arrow_undoG.ico"
+IDI_ICON_SHOT           ICON                    "res\\camCapture.ico"
+IDI_ICON_SHOTG          ICON                    "res\\camCaptureG.ico"
+IDI_ICON_CANCEL         ICON                    "res\\cancel.ico"
+IDI_ICON_CANCELG        ICON                    "res\\cancelG.ico"
+IDI_ICON_EXIT           ICON                    "res\\door_in.ico"
+IDI_ICON_EXITG          ICON                    "res\\door_inG.ico"
+IDI_ICON_OPEN           ICON                    "res\\folder_brick.ico"
+IDI_ICON_OPENG          ICON                    "res\\folder_brickG.ico"
+IDI_ICON_TUTORIAL       ICON                    "res\\Help.ico"
+IDI_ICON_TUTORIALG      ICON                    "res\\HelpG.ico"
+IDI_ICON_ABOUT          ICON                    "res\\information.ico"
+IDI_ICON_ABOUTG         ICON                    "res\\informationG.ico"
+IDI_ICON_START          ICON                    "res\\play.ico"
+IDI_ICON_STOP           ICON                    "res\\stop.ico"
+IDI_ICON_SETTINGS       ICON                    "res\\settings.ico"
+IDI_ICON_SETTINGSG      ICON                    "res\\settingsG.ico"
+IDI_ICON_STARTG         ICON                    "res\\playG.ico"
+IDI_ICON_STOPG          ICON                    "res\\stopG.ico"
+IDI_ICON_ADD            ICON                    "res\\user_add.ico"
+IDI_ICON_ADDG           ICON                    "res\\user_addG.ico"
+IDI_ICON_REMOVE         ICON                    "res\\user_delete.ico"
+IDI_ICON_REMOVEG        ICON                    "res\\user_deleteG.ico"
+IDI_ICON_LOAD           ICON                    "res\\user_load.ico"
+IDI_ICON_LOADG          ICON                    "res\\user_loadG.ico"
+IDI_ICON_DETAIL         ICON                    "res\\book_edit.ico"
+IDI_ICON_DETAILG        ICON                    "res\\book_editG.ico"
+IDI_ICON_ADDDOC         ICON                    "res\\add_doc.ico"
+IDI_ICON_ADDDOCG        ICON                    "res\\add_docG.ico"
+IDI_ICON_VIEWDOC        ICON                    "res\\view_doc.ico"
+IDI_ICON_VIEWDOCG       ICON                    "res\\view_docG.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,0
+ PRODUCTVERSION 3,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041004e4"
+        BEGIN
+            VALUE "FileDescription", "BodyNote"
+            VALUE "FileVersion", "3.0.0.0"
+            VALUE "InternalName", "BodyNote.exe"
+            VALUE "LegalCopyright", "Claudio Tortorelli (c) Tutti i diritti riservati."
+            VALUE "OriginalFilename", "BodyNote.exe"
+            VALUE "ProductName", "BodyNote"
+            VALUE "ProductVersion", "3.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x410, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_IO MENU
+BEGIN
+    POPUP "Gestione Archivio"
+    BEGIN
+        MENUITEM "Backup archivio",             ID_INPUT_BACKUPARCHIVIO
+        MENUITEM "Aggiorna DB",                 ID_DBTOOLS_AGGIORNADB, INACTIVE
+        MENUITEM "Input da altro Workspace",    ID_INPUT_INPUTDATA, GRAYED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&Informazioni su BodyNote..."
+END
+
+#endif    // Italian (Italy) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+LANGUAGE 16, 1
+#pragma code_page(1252)
+#include "res\BodyNote.rc2"  // risorse non Microsoft Visual C++ modificate
+#include "l.ITA\afxres.rc"      // Componenti standard
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

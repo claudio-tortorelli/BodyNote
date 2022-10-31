@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{37E330E5-A63F-452F-A8BC-FF6AF357432F}</ProjectGuid>
+    <RootNamespace>BodyNote</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.50727.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\APIs\OpenCV\248\include;..\..\APIs\OpenCV\248\include\opencv;..\..\APIs\CTLib\include;..\..\APIs\CrashRPT\1.4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0410</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\APIs\OpenCV\248\lib\vc110\x86\Debug;..\..\APIs\CTLib\lib\vc110\x86;..\..\APIs\CrashRPT\1.4.2\lib\vc110\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+    </Link>
+    <PostBuildEvent>
+      <Command>./batchFromApis.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\APIs\OpenCV\248\include;..\..\APIs\OpenCV\248\include\opencv;..\..\APIs\CTLib\include;..\..\APIs\CrashRPT\1.4.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BODYNOTE_SOFTKEY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0410</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\APIs\OpenCV\248\lib\vc110\x86\Release;..\..\APIs\CTLib\lib\vc110\x86;..\..\APIs\CrashRPT\1.4.2\lib\vc110\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>./batchFromApis.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AccessPasswordDlg.cpp" />
+    <ClCompile Include="AddDocumentDlg.cpp" />
+    <ClCompile Include="BackupProgressDlg.cpp" />
+    <ClCompile Include="BCMenu.cpp" />
+    <ClCompile Include="BodyNote.cpp" />
+    <ClCompile Include="BodyNoteDlg.cpp" />
+    <ClCompile Include="BtnST.cpp" />
+    <ClCompile Include="HardcodeLicenseManager.cpp" />
+    <ClCompile Include="License.cpp" />
+    <ClCompile Include="MoreDataDlg.cpp" />
+    <ClCompile Include="OpenDocDlg.cpp" />
+    <ClCompile Include="PatientRecord.cpp" />
+    <ClCompile Include="PreviewWnd.cpp" />
+    <ClCompile Include="RulerRichEditCtrlDlg.cpp" />
+    <ClCompile Include="SelectPatientDlg.cpp" />
+    <ClCompile Include="SettingsDlg.cpp" />
+    <ClCompile Include="SortHeaderCtrl.cpp" />
+    <ClCompile Include="SortListCtrl.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="RulerRichEditCtrl\FontComboBox.cpp" />
+    <ClCompile Include="RulerRichEditCtrl\RRECRuler.cpp" />
+    <ClCompile Include="RulerRichEditCtrl\RRECToolbar.cpp" />
+    <ClCompile Include="RulerRichEditCtrl\RulerRichEdit.cpp" />
+    <ClCompile Include="RulerRichEditCtrl\RulerRichEditCtrl.cpp" />
+    <ClCompile Include="RulerRichEditCtrl\SizeComboBox.cpp" />
+    <ClCompile Include="RulerRichEditCtrl\StdGrfx.cpp" />
+    <ClCompile Include="RulerRichEditCtrl\External\ColourPicker.cpp" />
+    <ClCompile Include="RulerRichEditCtrl\External\ColourPopup.cpp" />
+    <ClCompile Include="RulerRichEditCtrl\External\StdioFileEx.cpp" />
+    <ClCompile Include="RulerRichEditCtrl\TextFile\TextFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BackupProgressDlg.h" />
+    <ClInclude Include="RulerRichEditCtrl\FontComboBox.h" />
+    <ClInclude Include="RulerRichEditCtrl\ids.h" />
+    <ClInclude Include="RulerRichEditCtrl\RRECRuler.h" />
+    <ClInclude Include="RulerRichEditCtrl\RRECToolbar.h" />
+    <ClInclude Include="RulerRichEditCtrl\RulerRichEdit.h" />
+    <ClInclude Include="RulerRichEditCtrl\RulerRichEditCtrl.h" />
+    <ClInclude Include="RulerRichEditCtrl\SizeComboBox.h" />
+    <ClInclude Include="RulerRichEditCtrl\StdGrfx.h" />
+    <ClInclude Include="RulerRichEditCtrl\External\ColourPicker.h" />
+    <ClInclude Include="RulerRichEditCtrl\External\ColourPopup.h" />
+    <ClInclude Include="RulerRichEditCtrl\External\StdioFileEx.h" />
+    <ClInclude Include="RulerRichEditCtrl\TextFile\TextFile.h" />
+    <ClInclude Include="AccessPasswordDlg.h" />
+    <ClInclude Include="AddDocumentDlg.h" />
+    <ClInclude Include="BCMenu.h" />
+    <ClInclude Include="BodyNote.h" />
+    <ClInclude Include="BodyNoteDlg.h" />
+    <ClInclude Include="BtnST.h" />
+    <ClInclude Include="HardcodeLicenseManager.h" />
+    <ClInclude Include="License.h" />
+    <ClInclude Include="MoreDataDlg.h" />
+    <ClInclude Include="OpenDocDlg.h" />
+    <ClInclude Include="PatientRecord.h" />
+    <ClInclude Include="PreviewWnd.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RulerRichEditCtrlDlg.h" />
+    <ClInclude Include="SelectPatientDlg.h" />
+    <ClInclude Include="SettingsDlg.h" />
+    <ClInclude Include="SortHeaderCtrl.h" />
+    <ClInclude Include="SortListCtrl.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\add_doc.ico" />
+    <Image Include="res\add_docG.ico" />
+    <Image Include="res\addSession.ico" />
+    <Image Include="res\addSessionG.ico" />
+    <Image Include="res\arrow_undo.ico" />
+    <Image Include="res\arrow_undoG.ico" />
+    <Image Include="res\BodyNote.ico" />
+    <Image Include="res\book_edit.ico" />
+    <Image Include="res\book_editG.ico" />
+    <Image Include="res\camCapture.ico" />
+    <Image Include="res\camCaptureG.ico" />
+    <Image Include="res\cancel.ico" />
+    <Image Include="res\cancelG.ico" />
+    <Image Include="res\door_in.ico" />
+    <Image Include="res\door_inG.ico" />
+    <Image Include="res\folder_brick.ico" />
+    <Image Include="res\folder_brickG.ico" />
+    <Image Include="res\Help.ico" />
+    <Image Include="res\HelpG.ico" />
+    <Image Include="res\information.ico" />
+    <Image Include="res\informationG.ico" />
+    <Image Include="res\play.ico" />
+    <Image Include="res\playG.ico" />
+    <Image Include="res\settings.ico" />
+    <Image Include="res\settingsG.ico" />
+    <Image Include="res\stop.ico" />
+    <Image Include="res\stopG.ico" />
+    <Image Include="res\user_add.ico" />
+    <Image Include="res\user_addG.ico" />
+    <Image Include="res\user_delete.ico" />
+    <Image Include="res\user_deleteG.ico" />
+    <Image Include="res\user_load.ico" />
+    <Image Include="res\user_loadG.ico" />
+    <Image Include="res\view_doc.ico" />
+    <Image Include="res\view_docG.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BodyNote.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\BodyNote.rc2" />
+    <None Include="BatchFromAPIs.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ChangeLog.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="BodyNote.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

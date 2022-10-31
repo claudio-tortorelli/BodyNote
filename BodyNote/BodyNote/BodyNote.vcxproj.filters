@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\RulerRichEditCtrl">
+      <UniqueIdentifier>{c2485cb2-0dc7-4b5b-a187-c545c8402077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RulerRichEditCtrl\External">
+      <UniqueIdentifier>{8c9ddc45-5568-47a2-bfdd-acd16d84697b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RulerRichEditCtrl\TextFile">
+      <UniqueIdentifier>{a8b8fb4b-18f9-425a-9f78-17d082c8aa19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AccessPasswordDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddDocumentDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BCMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BodyNote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BodyNoteDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnST.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HardcodeLicenseManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="License.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MoreDataDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenDocDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PatientRecord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PreviewWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerRichEditCtrlDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectPatientDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingsDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SortHeaderCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SortListCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerRichEditCtrl\FontComboBox.cpp">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerRichEditCtrl\RRECRuler.cpp">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerRichEditCtrl\RRECToolbar.cpp">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerRichEditCtrl\RulerRichEdit.cpp">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerRichEditCtrl\RulerRichEditCtrl.cpp">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerRichEditCtrl\SizeComboBox.cpp">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerRichEditCtrl\StdGrfx.cpp">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerRichEditCtrl\External\ColourPicker.cpp">
+      <Filter>Source Files\RulerRichEditCtrl\External</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerRichEditCtrl\External\ColourPopup.cpp">
+      <Filter>Source Files\RulerRichEditCtrl\External</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerRichEditCtrl\External\StdioFileEx.cpp">
+      <Filter>Source Files\RulerRichEditCtrl\External</Filter>
+    </ClCompile>
+    <ClCompile Include="RulerRichEditCtrl\TextFile\TextFile.cpp">
+      <Filter>Source Files\RulerRichEditCtrl\TextFile</Filter>
+    </ClCompile>
+    <ClCompile Include="BackupProgressDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RulerRichEditCtrl\FontComboBox.h">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerRichEditCtrl\ids.h">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerRichEditCtrl\RRECRuler.h">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerRichEditCtrl\RRECToolbar.h">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerRichEditCtrl\RulerRichEdit.h">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerRichEditCtrl\RulerRichEditCtrl.h">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerRichEditCtrl\SizeComboBox.h">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerRichEditCtrl\StdGrfx.h">
+      <Filter>Source Files\RulerRichEditCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerRichEditCtrl\External\ColourPicker.h">
+      <Filter>Source Files\RulerRichEditCtrl\External</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerRichEditCtrl\External\ColourPopup.h">
+      <Filter>Source Files\RulerRichEditCtrl\External</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerRichEditCtrl\External\StdioFileEx.h">
+      <Filter>Source Files\RulerRichEditCtrl\External</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerRichEditCtrl\TextFile\TextFile.h">
+      <Filter>Source Files\RulerRichEditCtrl\TextFile</Filter>
+    </ClInclude>
+    <ClInclude Include="AccessPasswordDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddDocumentDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BCMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BodyNote.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BodyNoteDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnST.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HardcodeLicenseManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="License.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MoreDataDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenDocDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PatientRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PreviewWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RulerRichEditCtrlDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectPatientDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingsDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SortHeaderCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SortListCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BackupProgressDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\add_doc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\add_docG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\addSession.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\addSessionG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\arrow_undo.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\arrow_undoG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\BodyNote.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\book_edit.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\book_editG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\camCapture.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\camCaptureG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\cancel.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\cancelG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\door_in.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\door_inG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\folder_brick.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\folder_brickG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Help.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\HelpG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\information.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\informationG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\play.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\playG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\settings.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\settingsG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\stop.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\stopG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\user_add.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\user_addG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\user_delete.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\user_deleteG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\user_load.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\user_loadG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\view_doc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\view_docG.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BodyNote.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\BodyNote.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="BatchFromAPIs.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ChangeLog.txt" />
+  </ItemGroup>
+</Project>

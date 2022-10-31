@@ -1,0 +1,7 @@
+RIGENERAZIONE LICENZA
+-------------------
+da versione 3.0.0
+
+il file lic viene generato automaticamente se si avvia il software con un file "nuova_licenza.txt" presente insieme all'exe. 
+Eliminare il precedente lic in caso di cambio harddisk
+

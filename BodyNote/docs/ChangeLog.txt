@@ -1,0 +1,111 @@
+TODO: 
+- sostituire CryptDecryptFile con funzioni CT_ in memoria
+- irrobustimento lettura/scrittura record (es. trim campi)
+- utilizzo di sqlite 
+- fix gestione eventi immagine
+- fix commenti immagine
+
+
+3.0	18/02/2017
+	Update: CTLib al posto di CommonLibCT
+	Update: il file lic viene generato in automatico se si avvia il software con un file "nuova_licenza.txt" presente insieme all'exe. Eliminare il precedente lic in caso di cambio harddisk
+	Remove: il meccanismo di backup automatico settimanale dell'intera cartella workspace è stato nascosto
+	Add: aggiunta procedura di recupero parziale dei record con data.ini azzerato, nell'UpdatePatientIndex
+	Add: aggiunto il backup automatico di tutti i file crittati (eccetto, lic, secret e immagini) PRIMA del decrittaggio (nuovo backup ogni ora)
+	Remove: disabilitato aggiornamento workspace da vecchia versione, da menu
+
+2.9	08/10/2015
+	Bug: crash quando andava a formattare la stringa di errore nel fallimento della copia del file importato (OnBnClickedButtonCaricadoc())
+	Update: aggiunto try catch in OnBnClickedButtonCaricadoc()
+	Update: controllato il ritorno della funzione SaveCurRecordToFile(), aggiunto try catch
+	Add: GetLastErrorString()
+	Update: crash report non più obbligatorio
+
+2.8	29/04/2015
+	Corretto bug: non salva diario clinico se nuovo paziente, mai salvato prima (cartella paziente non ancora presente)
+
+2.7 27/04/2015
+	Aggiunto CrashRpt
+
+2.6 26/04/2015
+	Salvataggio diario clinico (non salva se si chiude da x)
+	Tolto Nome + Cognome da cartella dati paziente, solo ID numerico
+	procedura di aggiornamento automatico cartelle workspace e dbindex	
+	Corretto bug crash se workspace non presente nel path salvato tra i settings in fase di caricamento e salvataggio
+	backup automatico
+	dbIndex crittato
+	rimossi caratteri terminali nome e cognome in input
+	nome immagine non contiene più riferimento ad ID paziente, solo data e counter
+	global id per i record non più scritto nei settings ma ricalcolato dalle cartelle	
+	pulsante apri cartella nascosto
+
+2.5 10/04/2015
+	Attivazione/disattivazione combo immagini e pulsante elimina in funzione della reale presenza di immagini
+	Ultima foto scattata ricaricata nella preview dopo lo stop webcam
+	Reintrodotto il minimize box nel dialogo principale
+	Riabilitato zoom su preview dopo foto acquisita e stop webcam
+	Nel copyfile dell'import visualizza come messaggio condizioni di errore
+	Pulsanti nuovo doc e vedi doc con testo
+
+2.4 12/01/2015
+	Rebuild con target os system WINver 0x0501, winXP
+
+2.3 08/01/2015
+	Rebuild con librerie VC110_XP
+	Variazione ordine dei campi dettaglio paziente (richiesto)
+	Aggiunta campo "altro", accorpamento campo "sport"
+	Previewwnd rivista visualizzazione zoom x 
+
+2.2 17/12/2014
+	L'ultimo record dei pazienti viene caricato nell'elenco del dialogo di selezione 2 volte
+	Aggiunta ricerca per nome paziente e data creazione all'interno del dialogo di selezione paziente
+
+2.1 15/12/2014
+	Leggere anche l'ini in base alla definizione di SETTINGS_LOCATION_EXEC
+	Progress caricamento record
+	File indice dei record per caricamento lista, senza dover aprire tutti i file
+	Corretto avvio webcam in caso di check per webcam non presenti
+	Convertito progetto per vc110, aggiornato opencv
+	Rimosso OnInputData()
+
+2.0 03/12/2014
+	controlli da disabled a readonly
+	traduzione italiano
+	esteso contenuto record paziente
+	variazione interfaccia dialogo principale
+	aggiunta scheda dettaglio paziente
+	Introdotto BODYNOTE_SOFTKEY preprocessore
+	revisionata crittazione/decrittazione
+	aggiornata previewwnd
+	corretto uso commenti
+	integrato diario clinico rich text
+	revisionata interfaccia dettaglio paziente
+		Aggiungere edit "Caratteristiche del sintomo"
+		Rinomina funzionalità apparati "altro" in "respiratorio"
+		Aggiungi funzionalità apparati > "pelle"
+		Elimina "trattamenti" e "diagnosi" > Pulsante "diario clinico" (foglio block notes)
+	Pulsante "Archivio documenti" accanto a "Dettaglio informazioni" > apre listctrl con doc importati, data import, data file:
+			pulsante aggiungi > chiede nome 
+			pulsante apri > shellexecute
+	backup archivio
+	SETTINGS_LOCATION_EXEC per scrivere i settaggi nella cartella dell'eseguibile invece che in users\<nome utente>
+	
+1.0 2011
+* crittazione dei file dei dati: paziente, fotografie e commenti alle foto visibili solo da programma (non è una gran protezione, ma meglio che niente)
+* finestra della foto principale zoomabile se webcam non attive
+* Fisioterapia savinese inserita come licenzataria
+* lista di caricamento record ordinabile per cognome paziente e per data creazione scheda
+* aggiunto accesso tramite password, modificabile da utente (default 'admin')
+* software legato a pennina (hardcoded)
+* workspacefolder personalizzata
+* import di record e file accessori (_data)
+* icona settings
+* rinomina mstools in tools
+- easy size
+* Left click to open zoom - Right click to reset zoom
+* velocizza passaggio tra camere
+- scatto multiplo
+* selectpicture, carica indice sbagliato?
+* no close durante play!!
+- run as an admin
+
